@@ -25,11 +25,11 @@ dependency "merb_helpers"
 
 # Settings for Merb mailer
 Merb::Mailer.config = {
-    :host   => 'mail.web2media.net',
+    :host   => 'mail.example.com',
     :port   => '25',
-    :user   => 'test@web2media.net',
-    :pass   => 'qaz123',
+    :user   => 'test@example.com',
+    :pass   => '',
     :auth   => :plain,
-    :domain => "web2media.net" # the HELO domain provided by the client to the server
+    :domain => "example.com" # the HELO domain provided by the client to the server
   }
 

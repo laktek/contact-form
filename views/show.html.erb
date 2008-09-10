@@ -1,9 +1,9 @@
 <h1>Contact Form</h1>
  <%= error_messages_for :contact %>
- <% form_for :contact, :action => url(:contacts) do %>
-      <div><%= text_control :name, :label => 'Name' %></div>
-      <div><%= text_control :email,  :label => 'Email' %></div>
-      <div><%= text_area_control :message, :label => 'Message' %></div>
-      <%= submit_button 'Send' %>
- <% end %>
+ <%= form_for :contact, :action => url(:contacts) do %>
+      <div><%= text_field :name, :label => 'Name' %></div>
+      <div><%= text_field :email,  :label => 'Email' %></div>
+      <div><%= text_area :message, :label => 'Message' %></div>
+      <%= submit 'Send' %>
+ <% end =%>
 
